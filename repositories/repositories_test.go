@@ -19,9 +19,9 @@ func init() {
 }
 
 func TestMain(m *testing.M) {
-	fmt.Print("Start: test \n")
+	fmt.Print("Start: test\n")
 	DB = config.New()
 	config.Migrate(DB)
 	m.Run()
-	fmt.Print("End: test \n")
+	fmt.Print("End: test\n")
 }
